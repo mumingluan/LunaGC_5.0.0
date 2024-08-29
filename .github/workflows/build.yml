@@ -5,9 +5,7 @@ on:
     paths:
       - "**.java"
     branches:
-      - "stable"
-      - "development"
-      - "unstable"
+      - "main"
   pull_request:
     paths:
       - "**.java"
@@ -46,5 +44,5 @@ jobs:
       - name: Upload build
         uses: actions/upload-artifact@v3
         with:
-          name: Grasscutter
-          path: grasscutter-*.jar
+          name: lunagc
+          path: lunagc-*.jar
